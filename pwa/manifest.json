@@ -1,0 +1,7 @@
+{
+  "icons": [
+  ],
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "scope": "/"
+}

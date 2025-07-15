@@ -1,0 +1,44 @@
+{
+  "src": {
+    "styles": "./_src/styles",
+    "scripts": "./_src/scripts",
+    "images": "./_src/images"
+  },
+  "copy": [
+    {
+      "from": "./_src/images",
+      "to": "images",
+      "globOptions": {
+        "ignore": [
+          "*.json"
+        ]
+      }
+    },
+    {
+      "from": "./_src/fonts",
+      "to": "fonts"
+    },
+    {
+      "from": "./node_modules/jquery/dist/jquery.min.js"
+    },
+    {
+      "from": "./node_modules/@fortawesome/fontawesome-free/webfonts",
+      "to": "fonts"
+    }
+  ],
+  "output": "./assets",
+  "localWebpack": "default",
+  "externals": {
+    "jquery": "jQuery"
+  },
+  "localDev": {
+    "host": "localhost",
+    "port": "3000",
+    "sync": true
+  },
+  "optimization": {
+    "splitChunks": {
+      "chunks": "async"
+    }
+  }
+}
